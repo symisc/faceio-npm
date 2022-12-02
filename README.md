@@ -11,7 +11,7 @@ It’s super quick to get FACEIO Up & Running with just few lines of code. Follo
 > ## STEP 1 - IMPORT `fio.js` TO YOUR SITE
 
 ```js
-import faceIO from '@tobechanged/fio.js'
+import faceIO from '@faceio/fiojs'
 
 const faceio = new faceIO('app-public-id') // Get the application Public ID at https://console.faceio.net.
 ```
@@ -23,7 +23,7 @@ const faceio = new faceIO('app-public-id') // Get the application Public ID at h
 > ## STEP 2 - INVOKE THE WIDGET
 
 ```js
-import faceIO from '@tobechanged/fio.js'
+import faceIO from '@faceio/fiojs'
 
 const faceio = new faceIO('app-public-id'); // Get the application Public ID at https://console.faceio.net.
 
@@ -99,7 +99,7 @@ The table below lists all fields of the `userInfo` object returned to your web a
 > ### EXAMPLE
 
 ```js
-import faceIO from '@tobechanged/fio.js'
+import faceIO from '@faceio/fiojs'
 
 const faceio = new faceIO('app-public-id'); // Get the application Public ID at https://console.faceio.net.
 
@@ -179,7 +179,7 @@ The table below lists all fields of the `userData` object returned to your web a
 > ### EXAMPLE
 
 ```js
-import faceIO from '@tobechanged/fio.js'
+import faceIO from '@faceio/fiojs'
 
 const faceio = new faceIO('app-public-id'); // Get the application Public ID at https://console.faceio.net.
 
@@ -257,7 +257,7 @@ The table below lists all possible error codes that are returned from either the
 > ## REACTJS INTEGRATION BOILERPLATE
 
 ```js
-import faceIO from '@tobechanged/fio.js'
+import faceIO from '@faceio/fiojs'
 
 const faceio = new faceIO('app-public-id');
 
