@@ -6,6 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": ""
+  "keywords": ["facial authentication", "Biometric authentication", "face recognition", "passwordless authentication", "face identification","face biometrics", "facial authentication", "passwordless authentication"],
+  "author": "PixLab | Symisc Systems - https://faceio.net"
 }
