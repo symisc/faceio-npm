@@ -311,3 +311,11 @@ async function authenticateUser() {
 
 export default App;
 ```
+
+# Further Reading
+Finally, for additional information & to learn more about implementing FACEIO on your website or web application, please refer to the following documents:
+- **[Getting Started Tutorial](https://faceio.net/getting-started)**: Learn the fundamentals about implementing facial authentication on a typical web application.
+- **[Integration Guide](https://faceio.net/integration-guide)**: Learn how to implement ***fio.js***, our facial recognition library on your website.
+- **[Developer Center](https://faceio.net/dev-guides)**: Code samples, documentation, support channels, and all the resources yo need to implement FACEIO on your website.
+- **[Frequently Asked Questions](https://faceio.net/faq)**: Get instant answers to the most common questions.
+- **[Trust Center](https://faceio.net/trust-center)**: Learn how we handle your data securely and in compliance with privacy and legal requirements.
