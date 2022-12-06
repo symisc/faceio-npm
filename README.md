@@ -1,8 +1,15 @@
-# Overview
+# Introducing FACEIO
+
+* **TLDR;** [FACEIO](https://faceio.net) is a facial authentication framework that is to be implemented on websites or web applications via simple JavaScript snippet (just like Disqus or Google Tag) to easily authenticate users via **Face Recognition instead of the traditional login/password pair or OTP code**.
+* FACEIO is a cross-browser, Cloud & On-Premise deployable, facial authentication framework, with a client-side JavaScript library (fio.js) that [integrates seamlessly](https://faceio.net/integration-guide) with any website or web application desiring to offer secure facial recognition experience to their users...
+* Put it simply, FACEIO is the easiest way to add passwordless authentication to websites or web applications. Simply implement fio.js on your website, and you will be able to **instantly authenticate your existing users, and enroll new ones via Face Recognition** using their computer Webcam or smartphone frontal camera on their favorite browser.
+* Once fio.js [implemented](https://faceio.net/integration-guide) on your website, you'll be able to instantly recognize your existing users, on-board new members securely with maximum convenience, and at real-time thanks to passwordless experience powered by face recognition.
+
+![faceio-sample-app](https://user-images.githubusercontent.com/4615920/205783176-f5123b6f-08f1-448c-b023-2ccd6023a5f6.gif)
+
+# `fio.js` LIBRARY & WIDGET INTEGRATION
 
 The FACEIO Widget is a simple and elegant interface to provide **secure facial authentication experience to your users** via simple calls to the `enroll()` & `authenticate()` methods. The Widget is powered by the `fio.js `JavaScript library, which is simple enough to [integrate](https://faceio.net/integration-guide#fiojs-integration) in a matter of minutes while being flexible enough to support highly customized setups. Once implemented on your website or web-based application, you'll be able to authenticate your existing users, enroll new ones securely, with maximum convenience on their favorite browser, and at real-time thanks to passwordless experience powered by face recognition.
-
-# `fio.js` LIBRARY INTEGRATION
 
 `fio.js` works with regular webcams, and smartphones frontal camera on all modern browsers, **does not require biometric sensors**, and works seemingly with all websites and web applications regardless of the underlying front-end technology used (ie. React, Vue, jQuery, Vanilla Javascript, static HTML, etc.) or server-side language or framework (eg. PHP, Python, Node.js, Rust, Elixir, etc.).
 
