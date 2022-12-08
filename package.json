@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "description": "Facial Authentication for the Web",
   "main": "index.js",
-  "homepage": "https://github.com/symisc/faceio-npm",
+  "homepage": "https://faceio.net/",
   "license": "APACHE 2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
