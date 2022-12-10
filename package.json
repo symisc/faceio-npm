@@ -4,6 +4,10 @@
   "description": "Facial Authentication for the Web",
   "main": "index.js",
   "homepage": "https://faceio.net/",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/symisc/faceio-npm.git"
+  },
   "license": "APACHE 2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
