@@ -1,4 +1,11 @@
-# Introducing FACEIO
+## Release Updates & Announcments:
+
+* [New REST API Endpoints Available for FACEIO](https://blog.pixlab.io/2023/04/new-rest-api-endpoints-available-for-faceio)
+* [**Livneness Detection & Face Anti-Spoofing Security Feature Available for FACEIO**](https://www.biometricupdate.com/202303/pixlab-adds-active-liveness-detection-to-faceio-biometrics-framework)
+* [Webhooks Enhancements & Performance Improvements](https://blog.pixlab.io/2022/11/faceios-webhooks-enhancements-performance-improvements)
+* [fio.js V1.9 Released with Face Duplication Prevention](https://blog.pixlab.io/2022/10/fiojs-190-released-with-face-duplication-prevention)
+
+## Introducing FACEIO NPM Package
 
 * **TLDR;** [FACEIO](https://faceio.net) is a facial authentication framework that is to be implemented on websites or web applications via simple JavaScript snippet (just like Disqus or Google Tag) to easily authenticate users via **Face Recognition instead of the traditional login/password pair or OTP code**.
 * FACEIO is a cross-browser, Cloud & On-Premise deployable, facial authentication framework, with a client-side JavaScript library (fio.js) that [integrates seamlessly](https://faceio.net/integration-guide) with any website or web application desiring to offer secure facial recognition experience to their users...
