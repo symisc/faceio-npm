@@ -1,6 +1,6 @@
 {
   "name": "@faceio/fiojs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Facial Authentication for the Web",
   "main": "index.js",
   "homepage": "https://faceio.net/",
