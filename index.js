@@ -68,4 +68,35 @@ module.exports = class faceio {
     async restartSession() {
         return await internalCDN.restartSession()
     }
+    
+    /**
+    * Return the list of all possible error codes than can be triggered during failed authentication or enrollment.
+    * @returns fioErrorCode object
+    */
+    fetchAllErrorCodes(){
+     return {
+        PERMISSION_REFUSED: 1, /* Access to the Camera stream was denied by the end user */
+        NO_FACES_DETECTED:  2, /* No faces were detected during the enroll or authentication process */
+        UNRECOGNIZED_FACE:  3, /* Unrecognized face on this application's Facial Index */
+        MANY_FACES:         4, /* Two or more faces were detected during the scan process */
+        PAD_ATTACK:         5, /* Presentation (Spoof) Attack (PAD) detected during the scan process */
+        FACE_MISMATCH:      6, /* Calculated Facial Vectors of the user being enrolled do not matches */
+        NETWORK_IO:         7, /* Error while establishing network connection with the target FACEIO processing node */
+        WRONG_PIN_CODE:     8, /* Wrong PIN code supplied by the user being authenticated */
+        PROCESSING_ERR:     9, /* Server side error */
+        UNAUTHORIZED:       10, /* Your application is not allowed to perform the requested operation (eg. Invalid ID, Blocked, Paused, etc.). Refer to the FACEIO Console for additional information */
+        TERMS_NOT_ACCEPTED: 11, /* Terms & Conditions set out by FACEIO/host application rejected by the end user */
+        UI_NOT_READY:       12, /* The FACEIO Widget code could not be (or is being) injected onto the client DOM */
+        SESSION_EXPIRED:    13, /* Client session expired. The first promise was already fulfilled but the host application failed to act accordingly */
+        TIMEOUT:            14, /* Ongoing operation timed out (eg, Camera access permission, ToS accept delay, Face not yet detected, Server Reply, etc.) */
+        TOO_MANY_REQUESTS:  15, /* Widget instantiation requests exceeded for freemium applications. Does not apply for upgraded applications */
+        EMPTY_ORIGIN:       16, /* Origin or Referer HTTP request header is empty or missing */
+        FORBIDDDEN_ORIGIN:  17, /* Domain origin is forbidden from instantiating fio.js */
+        FORBIDDDEN_COUNTRY: 18, /* Country ISO-3166-1 Code is forbidden from instantiating fio.js */
+        UNIQUE_PIN_REQUIRED: 19, /* Supplied PIN Code must be unique among other PIN's on this application */
+        SESSION_IN_PROGRESS: 20, /* Another authentication or enrollment session is in progress */
+        FACE_DUPLICATION:    21, /* Prevent face duplication during enrollment. Same user trying to enroll twice or more */
+        MINORS_NOT_ALLOWED:  22  /* Minors not allowed to enroll on this application */ 
+    };   
+   }
 }
