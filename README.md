@@ -1,4 +1,5 @@
 ## Release Updates & Announcments:
+* [fio.js V2.1 Released with Age Verification & Minors Access Prevention](https://blog.pixlab.io/2023/06/age-verification-check-available-for-faceio-face-recognition)
 * Introducing the `fetchAllErrorCodes()` method for the NPM Package for much better error logging experience.
 * [New REST API Endpoints Available for FACEIO](https://blog.pixlab.io/2023/04/new-rest-api-endpoints-available-for-faceio)
 * [Liveness Detection & Face Anti-Spoofing Security Feature Available for FACEIO](https://www.biometricupdate.com/202303/pixlab-adds-active-liveness-detection-to-faceio-biometrics-framework)
@@ -57,7 +58,43 @@ async function authenticateUser(){
     // call to faceio.authenticate() here will automatically trigger the facial authentication process
 }
 function handleError(errCode){
-     // Handle error here
+    // Handle error here
+    // Log all possible error codes during user interaction..
+    // Refer to: https://faceio.net/integration-guide#error-codes
+    // for a detailed overview when these errors are triggered.
+    const fioErrCode = faceio.fetchAllErrorCodes();
+    switch (errCode) {
+    case fioErrCode.PERMISSION_REFUSED:
+        console.log("Access to the Camera stream was denied by the end user");
+    break;
+    case fioErrCode.NO_FACES_DETECTED:
+        console.log("No faces were detected during the enroll or authentication process");
+    break;
+    case fioErrCode.UNRECOGNIZED_FACE:
+        console.log("Unrecognized face on this application's Facial Index");
+    break;
+    case fioErrCode.MANY_FACES:
+        console.log("Two or more faces were detected during the scan process");
+    break;
+    case fioErrCode.FACE_DUPLICATION:
+        console.log("User enrolled previously (facial features already recorded). Cannot enroll again!");
+    break;
+    case fioErrCode.MINORS_NOT_ALLOWED:
+        console.log("Minors are not allowed to enroll on this application!");
+    break;
+    case fioErrCode.PAD_ATTACK:
+        console.log("Presentation (Spoof) Attack (PAD) detected during the scan process");
+    break;
+    case fioErrCode.FACE_MISMATCH:
+        console.log("Calculated Facial Vectors of the user being enrolled do not matches");
+    break;
+    case fioErrCode.WRONG_PIN_CODE:
+        console.log("Wrong PIN code supplied by the user being authenticated");
+    break;
+    // ...
+    // Refer to the boilerplate at: https://gist.github.com/symisc/34203d2811a39f2a871373abc6dd1ce9
+    // for the list of all possible error codes.
+    }
 }
 
 export default App;
