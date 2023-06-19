@@ -62,8 +62,8 @@ function handleError(errCode){
     // Log all possible error codes during user interaction..
     // Refer to: https://faceio.net/integration-guide#error-codes
     // for a detailed overview when these errors are triggered.
-    const fioErrCode = faceio.fetchAllErrorCodes();
-    switch (errCode) {
+    const fioErr = faceio.fetchAllErrorCodes();
+    switch (fioErr) {
     case fioErrCode.PERMISSION_REFUSED:
         console.log("Access to the Camera stream was denied by the end user");
     break;
