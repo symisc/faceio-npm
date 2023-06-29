@@ -65,8 +65,8 @@ module.exports = class faceio {
      * @returns true if the request for a new session have been granted, and ready for another round of calls to enroll() or authenticate() for the same user. false otherwise.
      */
 
-    async restartSession() {
-        return await internalCDN.restartSession()
+    restartSession() {
+        return internalCDN.restartSession()
     }
     
     /**
