@@ -2,8 +2,9 @@
 * [fio.js V2.1 Released with Age Verification & Minors Access Prevention](https://blog.pixlab.io/2023/06/age-verification-check-available-for-faceio-face-recognition)
 * Introducing the `fetchAllErrorCodes()` method for the NPM Package for much better error logging experience.
 * [New REST API Endpoints Available for FACEIO](https://blog.pixlab.io/2023/04/new-rest-api-endpoints-available-for-faceio)
-* [Liveness Detection & Face Anti-Spoofing Security Feature Available for FACEIO](https://www.biometricupdate.com/202303/pixlab-adds-active-liveness-detection-to-faceio-biometrics-framework)
 * [Webhooks Enhancements & Performance Improvements](https://blog.pixlab.io/2022/11/faceios-webhooks-enhancements-performance-improvements)
+* [Resolving Liveness Detection with FACEIO's Advanced AI Models](https://blog.pixlab.io/2024/07/resolving-liveness-detection-issues-with-faceios-advanced-ai-models)
+* [Liveness Detection & Face Anti-Spoofing Security Feature Available for FACEIO](https://www.biometricupdate.com/202303/pixlab-adds-active-liveness-detection-to-faceio-biometrics-framework)
 * [fio.js V1.9 Released with Face Duplication Prevention](https://blog.pixlab.io/2022/10/fiojs-190-released-with-face-duplication-prevention)
 
 ## Introducing FACEIO NPM Package
