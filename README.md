@@ -1,4 +1,5 @@
 ## Release Updates & Announcments:
+* [FACEIO Launches New REST APIs for Age and Gender Estimation](https://community.faceio.net/threads/announcements-faceio-launches-new-rest-apis-for-age-and-gender-estimation-rest-api-237)
 * [fio.js V2.1 Released with Age Verification & Minors Access Prevention](https://blog.pixlab.io/2023/06/age-verification-check-available-for-faceio-face-recognition)
 * Introducing the `fetchAllErrorCodes()` method for the NPM Package for much better error logging experience.
 * [New REST API Endpoints Available for FACEIO](https://blog.pixlab.io/2023/04/new-rest-api-endpoints-available-for-faceio)
