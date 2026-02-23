@@ -1,6 +1,6 @@
 {
   "name": "@faceio/fiojs",
-  "version": "1.1.0",
+  "version": "3.0.0",
   "description": "Facial Authentication for the Web",
   "main": "index.js",
   "homepage": "https://faceio.net/",
@@ -12,6 +12,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["facial authentication", "Biometric authentication", "face recognition", "passwordless authentication", "face identification","face biometrics", "facial authentication", "passwordless authentication"],
+  "keywords": [
+    "facial authentication", 
+    "Biometric authentication", 
+    "face recognition", 
+    "passwordless authentication", 
+    "face identification",
+    "face biometrics"
+  ],
   "author": "PixLab | Symisc Systems - https://faceio.net"
 }
