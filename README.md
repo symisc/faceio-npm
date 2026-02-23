@@ -100,7 +100,7 @@ export default App;
 ```
 
 > ## `ENROLL()` - ENROLL NEW USER
-‎
+
 > ### SYNTAX
 
 ```js
@@ -119,7 +119,7 @@ console.log(userInfo)
 > ### PARAMETERS
 `enroll()` takes a **single, optional `parameters` object** with the properties to be configured. The table below lists all possible `properties` of the parameters object:
 
-‎
+
 
 | **Property Name**      | **Type**              | **Default Value** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |--------------------|-----------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -133,7 +133,7 @@ console.log(userInfo)
 | `userConsent`        | Boolean               | false         | **If you have already collected user consent before enrollment** you can **set this parameter** to true. In which case, the Terms of Use consent screen is not displayed for the end user being enrolled. **It is your responsibility to explicitly ask for consent before enrolling a new user**. |
 | `showAbortBtn`       | Boolean               | false         | **Set to true if you want the abort button (close modal) to always appear during enrollment.** If the user explicitly aborts the enrollment process by clicking this button, the `fioErrCode.ABORTED_BY_USER` error will be raised. |
 
-‎
+
 
 > ### RETURN VALUE
 
@@ -189,7 +189,7 @@ export default App;
 ```
 
 > ## `AUTHENTICATE()` - IDENTIFY/RECOGNIZE ENROLLED USERS
-‎
+
 > ### SYNTAX
 
 ```js
@@ -218,7 +218,7 @@ console.log(userInfo)
 
 > ### RETURN VALUE
 
-‎
+
 
 **A Promise whose fulfillment handler receives a `userData` object when the user has successfully been identified**. On failure, the promise is rejected with one of the possible **error codes**.
 
@@ -230,9 +230,9 @@ The table below lists all fields of the `userData` object returned to your web a
 | `facialId`      | *UUID (String)* | **The Universally Unique Identifier assigned to this particular user**. |
 
 > ## `RESTARTSESSION()` - REQUEST NEW USER SESSION
-‎
+
 > ### SYNTAX
-‎
+
 ```js
 const boolean = await faceio.restartSession({})
 ```
@@ -243,7 +243,7 @@ const boolean = await faceio.restartSession({})
 
 
 > ## ERROR CODES
-‎
+
 The table below lists all possible error codes that are returned from either the `enroll()` or the `authenticate()` methods when **their promises are rejected respectively**.
 
 | **Error Code**                     | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                       | **Effect on `enroll()` or `authenticate()`**                                                                                                                                               |
